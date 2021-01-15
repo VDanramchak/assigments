@@ -11,13 +11,6 @@ body{
     overflow: hidden;
 }
 
-.wave{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    z-index: -1;
-}
 
 .container{
     width: 100vw;
@@ -105,7 +98,7 @@ form{
     bottom: -2px;
     width: 0%;
     height: 2px;
-    background-color: #38d39f;
+    background-color: #DB90AB;
     transition: .4s;
 }
 
@@ -127,7 +120,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-    color: #38d39f;
+    color: #DB90AB;
 }
 
 .input-div > div > input{
@@ -159,7 +152,7 @@ a{
 }
 
 a:hover{
-    color: #38d39f;
+    color: #DB90AB;
 }
 
 .btn{
@@ -169,7 +162,7 @@ a:hover{
     border-radius: 25px;
     outline: none;
     border: none;
-    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-image: linear-gradient(to right, #DB90AB, #DB90AB, #DB90AB);
     background-size: 200%;
     font-size: 1.2rem;
     color: #fff;
