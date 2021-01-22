@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> One page redo </title>
+ 
+    <link rel="shortcut icon" href="Img/smlogo.png">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="./Styles.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="This is a social media website(prototype)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+        <div class="sidestrip">
+        <div class="side-content">
+
+            <img class="sideic" src="img/smlogo.png">
+
+        <div class="sidet">[SM]</div>
+        <div class="desc">[social media that cares about your security]</div>
+
+            <a href="#"><div class="clink">About us</div></a>
+            <a href="#"><div class="clink">Help</div></a>
+            <a href="#"><div class="clink">Terms</div></a>
+            <a href="#"><div class="clink">Contact</div></a>
+
+</div><!--side-content-->
+</div><!--sidestrip-->
+
+        <div class="side">
+
+        <div class="overside"></div>
+
+            <img class="sideimg" src="img/pfp.jpg">
+
+        <div class="btitle">[username]</div>
+        <center><div class="krypton"></div></center>
+        <div class="bsubtitle">[BIO]</div>
+
+                <center><div class="nav">
+            
+                <a href="#">home</a>
+                <a href="#">inbox</a>
+                <a href="#">settings</a>
+            
+            <span id="btn-more"><a title="click for more info">more</a></span>
+            <span id="btn-less"><a title="click to hide more info">less</a></span>
+
+</div></center>
+
+</div><!--side-->
+
+            <div class="content">
+
+            <div class="entry">
+
+                <table style="width:100%">
+                <tr>
+                <td><div class="ans-c-1">
+                    <img class="askericon" src="img/pfp2.jpg"></div></td>
+
+                <td><div class="ans-c-2">
+                    <div class="asker-name">[Username1] asked: </div>
+
+                    <div class="ans-qn"> How superstitious are you?</div></div></td>
+</tr>
+</table>
+</center>
+            <div class="entry-body"> 
+                <center><textarea name="message" placeholder="send anonymous comment" ></textarea></center>
+                <center><div class="krypton-e"></div></div></center>
+
+
+                <table style="width:100%">
+                <tr>
+                <td><div class="ans-c-1">
+                    <img class="askericon" src="img/pfp3.jpg"></div></td>
+                
+                <td><div class="ans-c-2">
+                    <div class="asker-name">[Username2]</div></td>
+</tr>
+</table>
+
+                <img class="entry-photo" src="img/pfp4.jpg">
+<br>
+                <div class="entry-body"><center>Be the reason someone smiles today</center></div>
+
+                <center><div class="krypton-e"></div></center>
+
+
+
+                <table style="width:100%">
+                <tr>
+                
+                <td><div class="ans-c-1">
+                    <img class="askericon" src="img/pfp3.jpg"></div></td>
+                
+                <td>
+                    <div class="ans-c-2"><div class="asker-name">[Username2]</div></td>
+</tr>
+</table>
+            <div class="audinfocon"><div class="audinfo">
+            <div class="aud-track">{TrackName}</div>
+            </div></div>
+
+                    <div class="albumart">
+                    
+                    <img class="albartimg" src="{AlbumArtURL}">
+                    <div class="noalbart">album art unavailable</div>
+</div><!--albumart-->
+
+
+</div><!--entry-->
+
+<center><div class="krypton-end"></div></center>
+
+<div class="cpagi">
+
+<a href="{PreviousPage}">back</a>
+<br>
+<a href="{NextPage}">next</a>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:0,
+tip_fade_speed:300,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+ 
+<!--JAVA-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   
+$("#btn-more").click(function(){
+    $(".sidestrip").addClass("show-sidestrip");
+    $(".side").addClass("show-side");
+    $(".bottomleft").addClass("show-bottomleft");
+    $(".content").addClass("show-content");
+    $("#btn-more").toggle();
+    $("#btn-less").toggle();
+});
+   
+$("#btn-less").click(function(){
+    $(".sidestrip").removeClass("show-sidestrip");
+    $(".side").removeClass("show-side");
+    $(".bottomleft").removeClass("show-bottomleft");
+    $(".content").removeClass("show-content");
+    $("#btn-more").toggle();
+    $("#btn-less").toggle();
+});
+
+$(".btn-showtags").click(function(){
+    $(".show-hidetags").toggle();
+        var location = $(this).parent().parent();
+    $(".entry-tags",location).slideToggle("slow");
+});
+});
+</script>
+<!--END JAVA-->
+
+</body>
+</html>
